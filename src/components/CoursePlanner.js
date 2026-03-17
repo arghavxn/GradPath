@@ -8,7 +8,7 @@ import WeeklySchedule from "./WeeklySchedule";
 import CourseCard from "./CourseCard";
 
 const CoursePlanner = ({ completedCourses, onScheduleSave }) => {
-  // State variables
+  // State variablesaa
   const [availableCourses, setAvailableCourses] = useState([]);
   const [selectedSemester, setSelectedSemester] = useState("Fall 2025");
   const [selectedCourses, setSelectedCourses] = useState([]);
