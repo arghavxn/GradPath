@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { courses, academicRoadmap, courseCategories } from "../data";
+import AIAssistantPanel from "./AIAssistantPanel";
 
 const ProgressPage = ({ completedCourses, gpa = 3.7, graduationDate = "May 2026" }) => {
   const [showAllCourses, setShowAllCourses] = useState(false);
+  const [backendData, setBackendData] = useState(null);
+
+useEffect(() => {
+  fetch("http://localhost:5000/api/progress")
+    .then(res => res.json())
+    .then(data => {
+      console.log("Backend data:", data);
+      setBackendData(data);
+    })
+    .catch(err => console.error(err));
+}, []);
   
   // Calculate progress metrics
   const totalProgramCredits = courses.reduce((total, course) => total + course.credits, 0);
@@ -20,6 +32,9 @@ const ProgressPage = ({ completedCourses, gpa = 3.7, graduationDate = "May 2026"
     const completedInCategory = courseIds.filter(id => completedCourses.includes(id)).length;
     const percentage = totalInCategory > 0 ? Math.round((completedInCategory / totalInCategory) * 100) : 0;
     
+if (!backendData) {
+  return <div className="p-6">Loading...</div>;
+}
     return {
       category,
       completed: completedInCategory,
@@ -156,7 +171,14 @@ const ProgressPage = ({ completedCourses, gpa = 3.7, graduationDate = "May 2026"
           </div>
         </div>
       </div>
-
+      <AIAssistantPanel
+        completedCourses={completedCourses}
+        gpa={gpa}
+        graduationDate={graduationDate}
+        nextAvailableCourses={nextAvailableCourses}
+        remainingCourses={remainingCourses}
+        categoryProgress={categoryProgress}
+      />
       <div className="card mb-8 hover:shadow-md transition-all">
         <div className="card-header bg-purple-50 border-b border-purple-100">
           <h3 className="text-xl font-bold text-purple-700">Recommended Next Courses</h3>
