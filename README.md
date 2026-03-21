@@ -1,72 +1,133 @@
-# Getting Started with Create React App
+# 🎓 GradPath (Degree Navigator)
+> A smart academic planning system that simplifies course scheduling and advisor collaboration.
+GradPath is a full-stack academic planning platform designed to help students build, manage, and optimize their semester schedules with intelligent validation and advisor interaction.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### 📚 Course Planning
+- Drag-and-drop course scheduling
+- Automatic prerequisite validation
+- Credit limit enforcement
+- Semester-based course filtering
 
-### `npm start`
+### 🗓️ Schedule Management
+- Save, load, and delete schedules
+- Multiple plans per semester
+- Timestamped versions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### ⚡ Smart Conflict Detection
+- Detects time overlaps between courses
+- Prevents invalid schedules in real-time
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👩‍🏫 Advisor Integration
+- Advisors can review student plans
+- Status system: Draft / Approved / Changes Needed
+- Advisor feedback/comments system
 
-### `npm test`
+### 🔐 Authentication
+- Secure login & registration using JWT
+- User-specific data storage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend:
+- React.js
+- Tailwind CSS
+- @hello-pangea/dnd
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Backend:
+- Node.js
+- Express.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Database:
+- PostgreSQL
 
-### `npm run eject`
+Other:
+- JWT Authentication
+- REST API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧠 System Architecture
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Frontend (React)
+↓
+Backend API (Express)
+↓
+PostgreSQL Database
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📸 Demo
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/240c81dd-7037-4935-bb38-5f13a9d7152f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96172971-fb31-42f4-8547-fa44bdac2a76" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/751bf692-2f7e-4f7c-8036-4f1ea0340b20" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e0f76f71-6001-4565-b4cd-49fb05d20b78" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ecee39fc-bb37-40a3-be8c-ff68f82eeda7" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Setup Instructions
 
-### Code Splitting
+1. Clone Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+git clone https://github.com/your-username/gradpath.git
+cd gradpath
 
-### Analyzing the Bundle Size
+2. Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
+npm start
 
-### Making a Progressive Web App
+3. Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+cd backend
+npm install
+npm start
 
-### Advanced Configuration
+4. Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create a .env file inside /backend:
 
-### Deployment
+DATABASE_URL=your_postgres_connection
+JWT_SECRET=your_secret_key
+OPENAI_API_KEY=your_api_key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📌 Key Contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# GradPath" 
-"# GradPath" 
+- Full-stack architecture design
+- Real-time schedule validation
+- Advisor feedback system
+- Secure authentication system
+- PostgreSQL database design
+
+---
+
+## 🎯 Future Improvements
+
+- AI-based course recommendations
+- GPA prediction system
+- Degree progress tracking
+- Mobile UI improvements
+
+---
+
+## 👩‍💻 Author
+
+Arghavan Noori  
+Computer Science @ Mississippi Valley State University  
+
+GitHub: https://github.com/arghavxn
+LinkedIn: https://www.linkedin.com/in/arghavan-noori/
+
+---
+
+## 📄 License
+
+This project is for academic and demonstration purposes.
