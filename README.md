@@ -61,13 +61,8 @@ Backend API (Express)
 PostgreSQL Database
 
 ---
-
-## 📸 Demo
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/240c81dd-7037-4935-bb38-5f13a9d7152f" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96172971-fb31-42f4-8547-fa44bdac2a76" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/751bf692-2f7e-4f7c-8036-4f1ea0340b20" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e0f76f71-6001-4565-b4cd-49fb05d20b78" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ecee39fc-bb37-40a3-be8c-ff68f82eeda7" />
+## 🔐 Login Page
+<img width="1280" height="656" alt="image" src="https://github.com/user-attachments/assets/0b5c3252-ec6c-4120-a6c8-89c1f0c580cd" />
 
 ---
 
